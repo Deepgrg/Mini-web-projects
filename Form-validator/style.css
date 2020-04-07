@@ -61,11 +61,11 @@ h2{
     border-color:#777;
 }
 
-.form-control .success{
+.form-control.success input{
     border-color: var(--success-color);
 }
 
-.form-control .error{
+.form-control.error input{
     border-color: var(--error-color);
 }
 
@@ -77,14 +77,15 @@ h2{
     visibility: hidden;
 }
 
-.form-control .error small{
+.form-control.error small{
     visibility: visible;
 }
 
 .form button{
     cursor: pointer;
     border: 2px solid #3498db;
-    border-radius: 4px #3498db;
+    background-color: #3498db;
+    border-radius: 4px;
     color: white;
     display: block;
     font-size: 16px;

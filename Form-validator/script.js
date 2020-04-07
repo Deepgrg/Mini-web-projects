@@ -57,6 +57,7 @@ function checkLength(input ,min ,max){
     }
 }
 
+// to check if password1 and password 2 matched
 function checkPasswordMatch(input1, input2){
     if (input1.value !== input2.value){
         showError(input2, `Passwords donot match`);
@@ -64,48 +65,17 @@ function checkPasswordMatch(input1, input2){
 }
 
 
-
-
 //event listeners
 //on submitting the form
 form.addEventListener('submit', function(e){
+    //to prevent the default behaviour while submitting the form
     e.preventDefault();
 
-    //The Good way
+    //validating the input fields
     checkRequired([username,email, password, password2]);
     checkLength(username,3,15);
     checkLength(password,6,25);
     checkEmail(email);
     checkPasswordMatch(password, password2);
 
-    // The Bad way
-    // //Validating username
-    // if (username.value === ''){
-    //     showError(username, 'Username is required');
-    // }else{
-    //     showSuccess(username);
-    // }
-
-    // //Validating email
-    // if (email.value === ''){
-    //     showError(email, 'Email is required');
-    // }else if(!validateEmail(email)){
-    //     showError(email, 'Email is not valid');
-    // }else{
-    //     showSuccess(email);
-    // }
-
-    // //Validating passowrd
-    // if (password.value === ''){
-    //     showError(password, 'Username is required');
-    // }else{
-    //     showSuccess(password);
-    // }
-
-    // //Validating password2
-    // if (password2.value === ''){
-    //     showError(password2, 'Username is required');
-    // }else{
-    //     showSuccess(password);
-    // }
 });

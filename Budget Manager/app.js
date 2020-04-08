@@ -404,4 +404,5 @@ var controller = (function(budgetCtrl , uiCtrl){
     }
 })(budgetController , uiController);
 
+//Initializing the application
 controller.init();

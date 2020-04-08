@@ -1,4 +1,4 @@
-
+//Initail game data and logics
 var scores , roundScore , activePlayer, gamePoint, flag;
 scores = [0,0];
 roundScore = 0;
@@ -67,6 +67,8 @@ document.querySelector('.btn-new').addEventListener('click', newgame);
 
 
 //Functions used:
+
+//To change the current active player
 function changeActivePlayer(activePlayer){
     //Function to change the player's turn in the game
     document.querySelector('.player-' + activePlayer + '-panel').classList.remove('active');
@@ -83,6 +85,7 @@ function changeActivePlayer(activePlayer){
     }
 }
 
+// Initailize a new game
 function newgame(){
     document.getElementById('score-0').textContent = 0;
     document.getElementById('score-1').textContent = 0;
@@ -98,7 +101,7 @@ function newgame(){
     roundScore=0;
 }
 
-
+//Reset the game
 function reset(){
     document.getElementById('score-' + activePlayer).textContent = 0;
     document.getElementById('current-' + activePlayer).textContent = 0;

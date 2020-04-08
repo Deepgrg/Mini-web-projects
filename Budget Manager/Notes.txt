@@ -1,0 +1,22 @@
+Task 1:Add items
+    1. Add event handler of the submit button//
+    2. Get input values//
+    3. Add new item to our data structure//
+    4. Add the new item to the ui//
+    5. Calculate the budget //
+    6. Update the ui//
+
+Task 2:Delete items
+    1. Add event handler of the delete button//
+    2. Delete the item from the data structure//
+    3. Delete the item from the ui//
+    4. Re-Calculate the budget//
+    5. Update the ui//
+
+Task 3:Improve User Experince
+    1. Calculate percentages of each expenses list items//
+    2. Update the percentages in ui//
+    3. Display the current month and the year
+    4. Number formatting
+    5. Improve input field UX
+

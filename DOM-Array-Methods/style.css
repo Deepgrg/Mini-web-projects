@@ -41,6 +41,11 @@ button{
     font-size: 14px;
 }
 
+button:focus{
+    outline: none;
+    transform: scale(1.01);
+}
+
 main{
     flex: 1;
     padding: 10px 20px; 
